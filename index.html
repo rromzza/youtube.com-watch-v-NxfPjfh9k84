@@ -71,7 +71,7 @@
     const NAMESPACE = "nicht_klicken_hallo_wieso_klickst_du_drauf"; // frei erfinden, sollte einzigartig sein
     const COUNTER_NAME = "besuche";
  
-    fetch(`https://api.counterapi.dev/v1/${NAMESPACE}/${COUNTER_NAME}/up`)
+    fetch(`https://api.counterapi.dev/v2/${NAMESPACE}/${COUNTER_NAME}/up`)
       .then(res => res.json())
       .then(data => {
         // Zählerstand landet nur in der Browser-Konsole (F12), nicht sichtbar auf der Seite
