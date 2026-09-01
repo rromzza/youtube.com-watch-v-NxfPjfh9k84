@@ -66,18 +66,5 @@
     <img src="https://cdn.discordapp.com/emojis/1178021655436591164.webp?size=32" alt="Erwischt!">
     <h1 style="color:pink;">Du SoLlSt DoCh KeInE kOmIsChEn LiNkS aNkLiCkEn!</h1>
   </div>
-  <script>
-    // HIER ANPASSEN: eindeutigen Namespace/Zähler-Namen wählen, damit er nicht mit anderen kollidiert
-    const NAMESPACE = "nicht_klicken_hallo_wieso_klickst_du_drauf"; // frei erfinden, sollte einzigartig sein
-    const COUNTER_NAME = "besuche";
- 
-    fetch(`https://api.counterapi.dev/v2/${NAMESPACE}/${COUNTER_NAME}/up`)
-      .then(res => res.json())
-      .then(data => {
-        // Zählerstand landet nur in der Browser-Konsole (F12), nicht sichtbar auf der Seite
-        console.log("Aktueller Zählerstand:", data.count);
-      })
-      .catch(err => console.log("Zähler-Fehler:", err));
-  </script>
 </body>
 </html>
